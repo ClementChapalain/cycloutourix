@@ -1,0 +1,177 @@
+*{
+  margin: 0 auto;
+  /*border: 1px solid black;*/
+}
+
+
+body {
+  margin: 0 auto;
+}
+
+section {
+  padding: 18px 20px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > * {
+  text-align: center;
+  margin: 18px 0px 18px 0px;
+  max-width: 700px;
+}
+
+
+section > * > *:first-child {
+  margin-bottom: 8px;
+}
+
+
+/* FONTS */
+
+h2 {
+  font-family: "Delicious Handrawn";
+  font-size: 32px;
+  font-weight: 400;
+}
+
+h3 {
+  color: #B84739;
+  font-family: "Delicious Handrawn";
+  font-size: 28px;
+  font-weight: 400;
+}
+
+p {
+  font-family: "Reddit Mono";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+a {
+  color: #B84739;
+}
+
+/* BUTTONS & FORMS*/
+
+button {
+  padding: 10px 20px 14px 20px;
+  font-family: "Delicious Handrawn";
+  font-size: 28px;
+  cursor: pointer;
+  background-size: contain;
+  border: 0;
+}
+
+.cta {
+  background: url("assets/button_primary.svg") no-repeat center;
+  color: #E1C94C;
+}
+
+.secondary {
+  color: #000000;
+}
+
+#program {
+  background: url("assets/button_secondary_program.svg") no-repeat center;
+}
+
+#ok {
+  background: url("assets/button_secondary_ok.svg") no-repeat center;
+}
+
+input {
+  padding: 10px 20px 14px 20px;
+  font-family: "Delicious Handrawn";
+  font-size: 28px;
+  background-size: contain;
+  border: 0;
+}
+
+#email {
+  background: url("assets/button_secondary_emailinput.svg") no-repeat center;
+  width: 246px;
+}
+
+/* MENU */
+
+nav {
+  background-image: url("assets/background_hero.png");
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+
+  z-index: 1000;
+}
+
+nav > h2 > a {
+  color: black;
+  text-decoration: none;
+}
+
+nav.active {
+  transform: translateY(0);
+}
+
+.close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+
+.burger {
+  cursor: pointer;
+}
+
+/* HOMEPAGE */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px 12px 20px;
+  background-image: url("assets/background_header.png");
+}
+
+
+.hero {
+  text-align: center;
+  background-image: url("assets/background_hero.png");
+}
+
+.stage {
+  text-align: center;
+  background-image: url("assets/background_stage.png");
+}
+
+.info {
+  text-align: center;
+  background-image: url("assets/background_hero.png");
+}
+
+.faq {
+  background-image: url("assets/background_faq.png");
+}
+
+.faq > * {
+  text-align: left;
+}
+
+.footer {
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  background-image: url("assets/background_header.png");
+}

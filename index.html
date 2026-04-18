@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclotourix</title>
+  <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div id="logo">
+    <img src="assets/logo.svg">
+  </div>
+  <div id="burger">
+    <img src="assets/burger.svg">
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <div class="close" id="close"><img src="assets/close.svg"></div>
+  <h2><a href="#">Accueil</a></h2>
+  <h2><a href="#">Programme</a></h2>
+  <h2><a href="#">Le Tour de Gaule</a></h2>
+  <h2><a href="#">Contact</a></h2>
+  <button class="cta">s’inscrire</button>
+</nav>
+
+<section class="hero">
+  <h2>
+    La Cyclotourix, c’est le tour de Gaule à vélo, étape par étape,
+    à la découverte des plus belles routes et des spécialités locales
+  </h2>
+  <img src="assets/map.svg">
+</section>
+
+<section class="stage">
+  <h2>Étape #1 : de Paimpol à Rouen, du 12 au 19 septembre 2026</h2>
+  <p>Événement gratuit, ouvert à tous, sans niveau requis, chacun·e profite du voyage à son rythme et on se retrouve chaque matin et chaque soir pour un moment convivial.</p>
+  <p>Notre rôle : vous mettre à disposition une belle trace pour relier Paimpol à Rouen en 8 jours avec les points d’intérêts à ne pas louper pour remplir vos estomacs et découvrir du pays.</p>
+  <button class="cta">s’inscrire</button>
+</section>
+
+<section class="info">
+  <h2>Vous voulez en savoir plus ?</h2>
+  <div>
+    <p>Le programme jour par jour</p>
+    <button class="secondary" id="program">découvrir le programme</button>
+  </div>
+  <div>
+    <p>Restez au courant des dernières informations sur la Cyclotourix</p>
+    <div>
+      <input type="email" id="email" placeholder="email@example.fr">
+      <button class="secondary" id="ok">ok</button>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div>
+    <h3>Ça coûte combien ?</h3>
+    <p>L’événement est gratuit. L’inscription comprend juste les traces et le fait de rouler avec des gens sympas, et c’est déjà pas mal :)</p>
+  </div>
+  <div>
+    <h3>On va beaucoup rouler ?</h3>
+    <p>On prévoit de faire environ 80km par jour avec un dénivelé raisonnable (500-1000m par jour). Pour celleux qui le souhaitent, on proposera aussi des petits détours qui rallongent la  trace et permettent de découvrir encore plus de spécialités locales.</p>
+  </div>
+  <div>
+    <h3>Il me faut quoi comme vélo ?</h3>
+    <p>Peu importe (peut-être pas un BMX). On fera exclusivement de la route ou du chemin tranquille donc votre vélo quotidien ou de voyage fera très probablement l’affaire. De notre côté on sera en VTC, randonneuse, vélo de voyage ou gravel.</p>
+  </div>
+  <div>
+    <h3>On dort où ?</h3>
+    <p>On prévoit de dormir en camping chaque soir, on organisera ça en les prévenant en amont en fonction du nombre de participants. Si vous voulez vous organiser de votre côté pour dormir en gîte ou en hôtel pas de soucis évidemment.</p>
+  </div>  
+  <div>
+    <h3>À part pédaler, on fait quoi ?</h3>
+    <p>On se retrouve chaque matin pour un petit café et présentation de la journée. Pendant la journée on vous recommandera les bons spots pour manger, visiter, acheter des spécialités locales, faire des photos... Et le soir pour celleux qui le souhaitent on dîne ensemble et petite soirée tranquille.</p>
+  </div>  
+  <div>
+    <h3>Je suis obligé de venir les 8 jours ?</h3>
+    <p>Non, c’est à la carte, vous pouvez nous rejoindre sur la totalité du trajet ou seulement sur certaines journées.</p>
+  </div>  
+  <div>
+    <h3>Je n’ai jamais voyagé à vélo</h3>
+    <p>Tant mieux ! On organise la Cyclotourix aussi pour démocratiser à notre petite échelle le voyage à vélo et vous aider à sauter le pas.</p>
+  </div>  
+  <div>
+    <h3>Vous êtes qui ? Vous êtes sympas ?</h3>
+    <p>On est 6 potes qui faisons du vélo plus ou moins souvent, plus ou moins sportivement. On aime bien se retrouver régulièrement pour faire des weekends ou des voyages un peu plus longs à vélo. Nous on trouve qu’on est hyper sympas, vous nous direz ce que vous en pensez.</p>
+    <img src="assets/photo_groupe.png" style="width: 100%; max-width: 500px; margin-top:8px;">
+  </div>
+  <div>
+    <h3>Et les prochaines étapes ?</h3>
+    <p>Notre objectif est de relier toutes les villes du Tour de Gaule d’Asterix en vélo. On ne sait pas encore trop quand auront lieu les prochaines étapes, on pense en faire 1 à 2 par an a priori, on vous tiendra au courant. Si vous voulez en savoir plus sur le projet c’est <a href="#">par ici</a>.</p>
+  </div>  
+  <div>
+    <h3></h3>
+    <p></p>
+  </div>  
+
+
+</section>
+
+<footer class="footer">
+  <p>Contact • Mentions légales</p>
+</footer>
+
+<script>
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+  const close = document.getElementById("close");
+
+  burger.addEventListener("click", () => {
+    menu.classList.add("active");
+  });
+
+  close.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+
+  document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+</script>
+
+</body>
+</html>
