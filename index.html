@@ -4,37 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cyclotourix</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-K0KMY1E4QB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-K0KMY1E4QB');
-</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0KMY1E4QB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K0KMY1E4QB');
+  </script>
 </head>
 
 <body>
 
 <header class="header">
-  <div id="logo">
-    <a href="index.html">
+  <div>
+    <a id="logo" href="/">
       <img src="assets/logo.svg">
     </a>
-  </div>
-  <div id="burger">
-    <img src="assets/burger.svg">
+    <img id="burger" src="assets/burger.svg">
   </div>
 </header>
 
 <nav class="menu" id="menu">
   <div class="close" id="close"><img src="assets/close.svg"></div>
-  <h2><a href="index.html">Accueil</a></h2>
+  <h2><a href="/">Accueil</a></h2>
   <h2><a href="program.html">Programme</a></h2>
   <h2><a href="#">Le Tour de Gaule</a></h2>
   <h2><a href="#">Contact</a></h2>
@@ -59,13 +57,21 @@
   <h2>Vous voulez en savoir plus ?</h2>
   <div>
     <p>Le programme jour par jour</p>
-    <button class="secondary" id="program"><a href="program.html" style="text-decoration: none; color: black;">découvrir le programme</a></button>
+    <button class="secondary program_discover"><a href="program.html" style="text-decoration: none; color: black;">découvrir le programme</a></button>
   </div>
   <div>
     <p>Restez au courant des dernières informations sur la Cyclotourix</p>
     <div>
-      <input type="email" id="email" placeholder="email@example.fr">
-      <button class="secondary" id="ok">ok</button>
+      <div>
+        <input type="email" class="email" placeholder="email@example.fr">
+        <button class="secondary ok">ok</button>
+      </div>
+      <label class=consent>
+        <input type="checkbox">
+        <img class="checkbox-0"  src="assets/checkbox-0.svg">
+        <img class="checkbox-1"  src="assets/checkbox-1.svg">
+        j'accepte d'être contacté
+      </label>
     </div>
   </div>
 </section>
@@ -108,13 +114,13 @@
     <h3>Et les prochaines étapes ?</h3>
     <p>Notre objectif est de relier toutes les villes du Tour de Gaule d’Asterix en vélo. On ne sait pas encore trop quand auront lieu les prochaines étapes, on pense en faire 1 à 2 par an a priori, on vous tiendra au courant. Si vous voulez en savoir plus sur le projet c’est <a href="#">par ici</a>.</p>
   </div>  
-  <div>
-    <h3></h3>
-    <p></p>
-  </div>  
-
-
 </section>
+
+<section class="inscription">
+  <h2>On se voit en septembre ?</h2>
+  <button class="cta">s’inscrire</button>
+</section>
+
 
 <footer class="footer">
   <p>Contact • Mentions légales</p>
