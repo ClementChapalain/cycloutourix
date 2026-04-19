@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  padding: 18px 20px 18px 20px;
+  padding: 36px 24px 36px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,13 +19,12 @@ section {
 
 section > * {
   text-align: center;
-  margin: 18px 0px 18px 0px;
+  margin: 24px 0px 24px 0px;
   max-width: 700px;
 }
 
-
 section > * > *:first-child {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 
@@ -47,7 +46,7 @@ h3 {
 p {
   font-family: "Reddit Mono";
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 250;
 }
 
 a {
@@ -78,11 +77,11 @@ button {
   color: #000000;
 }
 
-#program {
+.program_discover {
   background: url("assets/button_secondary_program.svg") no-repeat center;
 }
 
-#ok {
+.ok {
   background: url("assets/button_secondary_ok.svg") no-repeat center;
 }
 
@@ -94,15 +93,65 @@ input {
   border: 0;
 }
 
-#email {
+.email {
   background: url("assets/button_secondary_emailinput.svg") no-repeat center;
   width: 246px;
+}
+
+.consent {
+  font-family: "Delicious Handrawn";
+  font-size: 28px;
+  cursor: pointer;
+  caret-color: transparent;
+  display: block;
+  padding-top:10px;
+}
+
+.consent > input {
+  display: none;
+}
+
+.checkbox-1 {
+  display: none;
+}
+
+.consent input:checked ~ .checkbox-1 {
+    display: inline;
+}
+
+.consent input:checked ~ .checkbox-0 {
+    display: none;
+}
+
+/* HEADER & FOOTER */
+
+.header {
+    background-image: url("assets/background_green.svg");
+  }
+
+.header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px 12px 24px;
+  max-width: 700px;
+}
+
+#logo, #burger {
+  margin: 0;
+  padding-top: 4px;
+}
+
+.footer {
+  text-align: center;
+  padding: 12px 20px 12px 20px;
+  background-image: url("assets/background_green.svg");
 }
 
 /* MENU */
 
 nav {
-  background-image: url("assets/background_hero.png");
+  background-image: url("assets/background_beige.svg");
 
   position: fixed;
   top: 0;
@@ -142,53 +191,40 @@ nav.active {
   cursor: pointer;
 }
 
-
-/* HEADER & FOOTER */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px 12px 20px;
-  background-image: url("assets/background_header.png");
-}
-
-
-.footer {
-  text-align: center;
-  padding: 12px 20px 12px 20px;
-  background-image: url("assets/background_header.png");
-}
-
 /* HOMEPAGE */
 
 .hero {
   text-align: center;
-  background-image: url("assets/background_hero.png");
+  background-image: url("assets/background_beige.svg");
 }
 
 .stage {
   text-align: center;
-  background-image: url("assets/background_stage.png");
+  background-image: url("assets/background_blue.svg");
 }
 
 .info {
   text-align: center;
-  background-image: url("assets/background_hero.png");
+  background-image: url("assets/background_beige.svg");
 }
 
 .faq {
-  background-image: url("assets/background_faq.png");
+  background-image: url("assets/background_blue.svg");
 }
 
 .faq > * {
   text-align: left;
 }
 
+.inscription {
+  text-align: center;
+  background-image: url("assets/background_beige.svg");
+}
+
 /* PROGRAM */
 
 .program {
-  background-image: url("assets/background_program.png");
+  background-image: url("assets/background_beige.svg");
 }
 
 .program h1 {
@@ -222,7 +258,7 @@ summary > div {
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  width: 100%; /* 🔥 CLÉ */
+  width: 100%;
   gap: 4px;
 }
 
