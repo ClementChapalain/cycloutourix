@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclotourix - Le Tour de Gaule</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0KMY1E4QB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K0KMY1E4QB');
+  </script>
+</head>
+
+<body>
+
+<header class="header">
+  <div>
+    <a id="logo" href="/">
+      <img src="assets/logo.svg">
+    </a>
+    <img id="burger" src="assets/burger.svg">
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <div class="close" id="close"><img src="assets/close.svg"></div>
+  <h2><a href="/">Accueil</a></h2>
+  <h2><a href="program.html">Programme</a></h2>
+  <h2><a href="tour_de_gaule.html">Le Tour de Gaule</a></h2>
+  <h2><a href="contact.html">Contact</a></h2>
+  <button class="cta"><a href="contact.html">s’inscrire</a></button>
+</nav>
+
+<section class="tdg">
+	<h1>La Cyclotourix, c'est le tour de Gaule à vélo, étape par étape, à la découverte des plus belles routes et des spécialités locales</h1>
+  <p>On commence en septembre 2026 avec la première étape entre Paimpol et Rouen, puis on prévoit d'organiser 1 à 2 étapes par an ensuite, en mettant en avant différents formats de voyage à vélo à chaque fois.</p>
+  <img src="assets/tdg.png" style="width: 100%; max-width: 800px; margin-top:16px;">
+</section>
+
+<section class="tdg_etapes">
+  <div>
+    <h3>Étape 1 : Paimpol - Rouen</h3>
+    <p>Du 12 au 19 septembre 2026</p>
+  </div>
+  <div>
+    <h3>Étape 2 : Rouen - Paris</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 3 : Paris - Cambrai</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 4 : Cambrai - Reims</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 5 : Reims - Metz</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 6 : Metz - Lyon</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 7 : Lyon - Nice</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 8 : Nice - Marseille</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 9 : Marseille - Toulouse</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 10 : Toulouse - Agen</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 11 : Agen - Bordeaux</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 12 : Bordeaux - Le Conquet</h3>
+    <p>À venir</p>
+  </div>
+  <div>
+    <h3>Étape 13 : Le Conquet - Paimpol</h3>
+    <p>À venir</p>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><a href="contact.html">Contact</a> • <a href="#">Mentions légales</a></p>
+</footer>
+
+<script>
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+  const close = document.getElementById("close");
+
+  burger.addEventListener("click", () => {
+    menu.classList.add("active");
+  });
+
+  close.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+
+  document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+</script>
+
+</body>

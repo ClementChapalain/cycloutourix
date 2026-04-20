@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cyclotourix - Contact</title>
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K0KMY1E4QB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K0KMY1E4QB');
+  </script>
+</head>
+
+<body>
+
+<header class="header">
+  <div>
+    <a id="logo" href="/">
+      <img src="assets/logo.svg">
+    </a>
+    <img id="burger" src="assets/burger.svg">
+  </div>
+</header>
+
+<nav class="menu" id="menu">
+  <div class="close" id="close"><img src="assets/close.svg"></div>
+  <h2><a href="/">Accueil</a></h2>
+  <h2><a href="program.html">Programme</a></h2>
+  <h2><a href="tour_de_gaule.html">Le Tour de Gaule</a></h2>
+  <h2><a href="contact.html">Contact</a></h2>
+  <button class="cta"><a href="contact.html">s’inscrire</a></button>
+</nav>
+
+<section class="contact">
+	<h1>Contact & Inscription</h1>
+  <p>Pour l'inscription, il suffit de nous envoyer un mail à <a href="mailto:cyclotourix@protonmail.com">cyclotourix@protonmail.com</a> avec un petit mot de présentation, en précisant combien vous êtes et quand vous arrivez et repartez. L'adresse fonctionne aussi si vous avez la moindre question évidemment !</p>
+  <h2>Newsletter</h2>
+  <div>
+    <p>Si vous souhaitez qu'on vous tienne au courant des dernières informations sur la Cyclotourix, c'est par ici :</p>
+    <div>
+      <div>
+        <input type="email" class="email" placeholder="email@example.fr">
+        <button class="secondary ok">ok</button>
+      </div>
+      <label class=consent>
+        <input type="checkbox">
+        <img class="checkbox-0"  src="assets/checkbox-0.svg">
+        <img class="checkbox-1"  src="assets/checkbox-1.svg">
+        j'accepte d'être contacté
+      </label>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p><a href="contact.html">Contact</a> • <a href="#">Mentions légales</a></p>
+</footer>
+
+<script>
+  const burger = document.getElementById("burger");
+  const menu = document.getElementById("menu");
+  const close = document.getElementById("close");
+
+  burger.addEventListener("click", () => {
+    menu.classList.add("active");
+  });
+
+  close.addEventListener("click", () => {
+    menu.classList.remove("active");
+  });
+
+  document.querySelectorAll(".menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+</script>
+
+</body>
