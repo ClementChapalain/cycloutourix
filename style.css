@@ -5,7 +5,6 @@
   /*border: 1px solid black;*/
 }
 
-
 body {
   margin: 0 auto;
 }
@@ -15,37 +14,37 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 section > * {
   text-align: center;
   margin: 24px 0px 24px 0px;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 section > * > *:first-child {
   margin-bottom: 16px;
 }
 
-
 /* FONTS */
 
  h1, h2 {
   font-family: "Delicious Handrawn";
-  font-size: 32px;
+  font-size: 2.4em;
   font-weight: 400;
 }
 
 h3 {
   color: #B84739;
   font-family: "Delicious Handrawn";
-  font-size: 28px;
+  font-size: 2.2em;
   font-weight: 400;
 }
 
 p {
   font-family: "Reddit Mono";
-  font-size: 20px;
+  font-size: 1.4em;
   font-weight: 250;
 }
 
@@ -68,13 +67,16 @@ button {
   border: 0;
 }
 
-.cta {
-  background: url("assets/button_primary.svg") no-repeat center;
-  color: #E1C94C;
+button a {
+  text-decoration: none;
 }
 
-.secondary {
-  color: #000000;
+.cta {
+  background: url("assets/button_primary.svg") no-repeat center;
+}
+
+.cta a {
+    color: #E1C94C;
 }
 
 .program_discover {
@@ -83,6 +85,10 @@ button {
 
 .ok {
   background: url("assets/button_secondary_ok.svg") no-repeat center;
+}
+
+.secondary a {
+  color: #000000;
 }
 
 input {
@@ -127,6 +133,11 @@ input {
 
 .header {
     background-image: url("assets/background_green.svg");
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Pour que le menu reste au-dessus des autres éléments */
+    box-shadow: 0px 0px 20px 0px gray; /* Ombre pour effet de profondeur */
   }
 
 .header > div {
@@ -134,7 +145,7 @@ input {
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px 12px 24px;
-  max-width: 700px;
+  max-width: 800px;
 }
 
 #logo, #burger {
@@ -146,6 +157,11 @@ input {
   text-align: center;
   padding: 12px 20px 12px 20px;
   background-image: url("assets/background_green.svg");
+}
+
+.footer p a {
+  color: black;
+  text-decoration: none;
 }
 
 /* MENU */
@@ -187,48 +203,49 @@ nav.active {
   cursor: pointer;
 }
 
-.burger {
+#burger {
   cursor: pointer;
 }
 
 /* HOMEPAGE */
 
-.hero {
-  text-align: center;
+.hp_hero {
   background-image: url("assets/background_beige.svg");
 }
 
-.stage {
-  text-align: center;
+.hp_etape1 {
   background-image: url("assets/background_blue.svg");
 }
 
-.info {
-  text-align: center;
+.hp_ensavoirplus {
   background-image: url("assets/background_beige.svg");
 }
 
-.faq {
+.hp_faq {
   background-image: url("assets/background_blue.svg");
 }
 
-.faq > * {
+.hp_faq > * {
   text-align: left;
 }
 
-.inscription {
-  text-align: center;
+.hp_inscription {
   background-image: url("assets/background_beige.svg");
 }
 
 /* PROGRAM */
 
-.program {
+.program_calendar {
   background-image: url("assets/background_beige.svg");
 }
 
-.program h1 {
+.program_calendar h1 {
  text-align: center;
+}
+
+.program_calendar > * {
+  width: 100%;
+  text-align: left;
 }
 
 details {
@@ -275,7 +292,7 @@ summary::-webkit-details-marker {
 .icon {
   width: 18px;
   height: 18px;
-  margin-top: 2px;
+  margin-top: 14px;
   background: url("assets/accordion_plus.svg") no-repeat center;
   background-size: contain;
   transition: transform 0.3s ease;
@@ -286,7 +303,27 @@ details[open] .icon {
   background-size: contain;
 }
 
-.program > * {
-  width: 100%;
+.program_inscription {
+  background-image: url("assets/background_blue.svg");
+}
+
+/* TOUR DE GAULE */
+
+.tdg {
+  background-image: url("assets/background_beige.svg");
+}
+
+.tdg_etapes {
+  background-image: url("assets/background_blue.svg");
+}
+
+/* CONTACT & INSCRIPTION */
+
+.contact {
+  background-image: url("assets/background_beige.svg");
+}
+
+.contact * {
   text-align: left;
 }
+
