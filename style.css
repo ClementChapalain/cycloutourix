@@ -28,14 +28,14 @@ section > * {
 
 /* FONTS */
 
- h1 {
+h1 {
   font-family: "Delicious Handrawn";
   font-size: 2.8em;
   font-weight: 400;
   margin:0;
 }
 
- h2 {
+h2 {
   font-family: "Delicious Handrawn";
   font-size: 2.4em;
   font-weight: 400;
@@ -136,6 +136,10 @@ input {
 
 .consent input:checked ~ .checkbox-0 {
     display: none;
+}
+
+#thanks {
+  color: #3C8657;
 }
 
 /* HEADER & FOOTER */
