@@ -94,6 +94,8 @@ button a {
 
 .ok {
   background: url("assets/button_secondary_ok.svg") no-repeat center;
+  -webkit-appearance: none;
+  appearance: none;
   color: black;
 }
 
