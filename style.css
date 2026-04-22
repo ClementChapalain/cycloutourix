@@ -110,7 +110,7 @@ input {
 
 .email {
   background: url("assets/button_secondary_emailinput.svg") no-repeat center;
-  width: 246px;
+  background-size: 100%;
 }
 
 .consent {
