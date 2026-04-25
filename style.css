@@ -187,7 +187,7 @@ input {
 /* HEADER & FOOTER */
 
 .header {
-    background-image: url("assets/background_green.svg");
+    background-image: url("assets/background_green.webp");
     position: sticky;
     top: 0;
     width: 100%;
@@ -212,7 +212,7 @@ input {
 .footer {
   text-align: center;
   padding: 12px 20px 12px 20px;
-  background-image: url("assets/background_green.svg");
+  background-image: url("assets/background_green.webp");
 }
 
 .footer p a {
@@ -232,7 +232,7 @@ nav > h3 > a {
 }
 
 nav.active {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
   position: fixed;
   top: 0;
   left: 0;
@@ -278,19 +278,19 @@ nav.active {
 /* HOMEPAGE */
 
 .hp_hero {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 .hp_etape1 {
-  background-image: url("assets/background_blue.svg");
+  background-image: url("assets/background_blue.webp");
 }
 
 .hp_ensavoirplus {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 .hp_faq {
-  background-image: url("assets/background_blue.svg");
+  background-image: url("assets/background_blue.webp");
 }
 
 .hp_faq > * {
@@ -298,13 +298,13 @@ nav.active {
 }
 
 .hp_inscription {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 /* PROGRAM */
 
 .program_calendar {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 .program_calendar h1 {
@@ -372,27 +372,27 @@ details[open] .icon {
 }
 
 .program_inscription {
-  background-image: url("assets/background_blue.svg");
+  background-image: url("assets/background_blue.webp");
 }
 
 /* TOUR DE GAULE */
 
 .tdg {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 .tdg_etapes {
-  background-image: url("assets/background_blue.svg");
+  background-image: url("assets/background_blue.webp");
 }
 
 .tdg_inscription {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
 }
 
 /* CONTACT & INSCRIPTION */
 
 .contact {
-  background-image: url("assets/background_beige.svg");
+  background-image: url("assets/background_beige.webp");
   flex: 1;
 }
 
