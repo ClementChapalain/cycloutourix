@@ -45,39 +45,39 @@
       <div>
         <h3>Samedi 12 septembre 2026</h3>
         <p>Paimpol > Binic</p>
-        <p>43km • 470m D+ • facile</p>
+        <p>43 km • 470 m (D+) • facile</p>
       </div>
       <span class="icon"></span>
     </summary>
     <p><span>Sur la route</span>&nbsp;: falaises de Plouha, plage de Bréhec, port à pieux de Gwin Zegal, Saint-Quay-Portrieux</p>
     <p><span>Gares à proximité</span>&nbsp;: Paimpol, Guingamp, Saint-Brieuc</p>
-    <iframe src="https://www.komoot.com/fr-fr/tour/2772740609/embed?share_token=aAKumrI66v2w2Bfvxg42LxqP49Byi89FfoMODqO0EDzviTaq1t&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
+    <iframe data-src="https://www.komoot.com/fr-fr/tour/2772740609/embed?share_token=aAKumrI66v2w2Bfvxg42LxqP49Byi89FfoMODqO0EDzviTaq1t&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
   </details>
   <details>
     <summary>
       <div>
         <h3>Dimanche 13 septembre 2026</h3>
         <p>Binic > Matignon</p>
-        <p>xxkm • xxxm D+ • xxxxx</p>
+        <p>78,5 km • 830 m (D+) • facile</p>
       </div>
       <span class="icon"></span>
     </summary>
     <p><span>Sur la route</span>&nbsp;: Erquy, Cap Fréhel, Saint-Cast-le-Guildo</p>
     <p><span>Gares à proximité</span>&nbsp;: Saint-Brieuc, Lamballe</p>
-    <p>trace détaillée à venir</p>
+    <iframe data-src="https://www.komoot.com/fr-fr/tour/2769148759/embed?share_token=anczbXbcsBSdY1gADZaomSMS82kFdmXOdP1FBcO3GeSbiRLjT1&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
   </details>
   <details>
     <summary>
       <div>
         <h3>Lundi 14 septembre 2026</h3>
         <p>Matignon > Cancale</p>
-        <p>xxkm • xxxm D+ • xxxxx</p>
+        <p>68,5 km • 470 m (D+) • facile</p>
       </div>
       <span class="icon"></span>
     </summary>
     <p><span>Sur la route</span>&nbsp;:</p>
     <p><span>Gares à proximité</span>&nbsp;:</p>
-    <p>trace détaillée à venir</p>
+    <iframe data-src="https://www.komoot.com/fr-fr/tour/2807117183/embed?share_token=aHv4WJ3SKvTXdIheBuxzxZomZTeHvZN5y4qJTl49KsDBTQ1NCX&profile=1" width="100%" height="700" frameborder="0" scrolling="no"></iframe>
   </details>
   <details>
     <summary>
@@ -173,6 +173,23 @@
       menu.classList.remove("active");
     });
   });
+
+  // Defer Komoot iframe loading until the accordion is opened — each embed is
+  // a full map app.
+  // To retrieve former version, replace
+  //    <iframe data-src=...    with
+  //    <iframe src=...
+  document.querySelectorAll("details").forEach(details => {
+    details.addEventListener("toggle", () => {
+      if (!details.open) return;
+      const iframe = details.querySelector("iframe[data-src]");
+      if (iframe) {
+        iframe.src = iframe.dataset.src;
+        delete iframe.dataset.src;
+      }
+    });
+  });
+
 </script>
 
 </body>
